@@ -1,95 +1,65 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+'use client';
+import Typography from '@mui/material/Typography';
+import React from 'react';
+import st from './page.module.css';
+import Paper from '@mui/material/Paper';
+import pomodoroImg from '@/img/pomodoro.png';
+import evklidImg from '@/img/evklid.png';
+import monitoringsiImg from '@/img/monitoringsi.png';
+import coinImg from '@/img/coin.png';
+import infinizaiImg from '@/img/infinizai.png';
+import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardActionArea from '@mui/material/CardActionArea';
+import CardMedia from '@mui/material/CardMedia';
+import CardContent from '@mui/material/CardContent';
+import CardSite from '@/components/CardSite/CardSite';
+// import CardSite from '@/components/CardSite';
 
-export default function Home() {
+const sites = [
+  {
+    href: 'https://evklid-henna.vercel.app/',
+    image: '/img/evklid.png',
+    stack: 'HTML, CSS, Swiper.',
+    github: 'https://github.com/alex8023g/evklid',
+  },
+  {
+    href: 'https://pomodoro-alpha-six.vercel.app/',
+    image: '/img/pomodoro.png',
+    stack: `React, Typescrypt, React-Router, Zustand, Drag'n'Drop, Rechart, Material
+                  UI.`,
+    github: 'https://github.com/alex8023g/pomodoro',
+  },
+  {
+    href: 'https://80-78-248-80.cloudvps.regruhosting.ru/monitoringsi?sechID=63d37736eaaf2b2db53299b9&naimsechshort=ТН%20ВНК%20+%20ГН%20Восток%20-%20ТЭСК%20(Юг)',
+    image: '/img/monitoringsi.png',
+    stack: `React, Typescrypt, React-Router, Zustand, Drag'n'Drop, Material UI, Express, Mongo DB.`,
+    github: 'https://github.com/alex8023g/monitoringSi',
+  },
+  {
+    href: 'https://coin-front-end.vercel.app',
+    image: '/img/coin.png',
+    stack: `React, Typescrypt, React-Router, Material UI, Recharts, Express, WebSocket.`,
+    github: 'https://github.com/alex8023g/coin-front-end',
+  },
+  {
+    href: 'https://kommo-infinizai.vercel.app',
+    image: '/img/infinizai.png',
+    stack: `React, Typescrypt, React-Router, classnames`,
+    github: 'https://github.com/alex8023g/kommo-infinizai',
+  },
+];
+
+export default function Portfolio() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  )
+    // <Layout>
+    <ul className={st.ul}>
+      {sites.map(({ image, href, stack, github }) => (
+        <li key={href}>
+          {<CardSite image={image} href={href} stack={stack} github={github} />}
+        </li>
+      ))}
+    </ul>
+    //  </Layout>
+  );
 }
