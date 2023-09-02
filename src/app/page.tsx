@@ -14,6 +14,7 @@ import CardActionArea from '@mui/material/CardActionArea';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import CardSite from '@/components/CardSite/CardSite';
+import { Header } from '@/components/Header';
 // import CardSite from '@/components/CardSite';
 
 const sites = [
@@ -52,14 +53,15 @@ const sites = [
 
 export default function Portfolio() {
   return (
-    // <Layout>
-    <ul className={st.ul}>
-      {sites.map(({ image, href, stack, github }) => (
-        <li key={href}>
-          {<CardSite image={image} href={href} stack={stack} github={github} />}
-        </li>
-      ))}
-    </ul>
-    //  </Layout>
+    <>
+      <Header />
+      <ul className={st.ul}>
+        {sites.map(({ image, href, stack, github }) => (
+          <li key={href}>
+            {<CardSite image={image} href={href} stack={stack} github={github} />}
+          </li>
+        ))}
+      </ul>
+    </>
   );
 }
