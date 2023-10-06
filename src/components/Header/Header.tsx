@@ -68,7 +68,6 @@ export function Header() {
         <Toolbar
           sx={{
             width: '1440px',
-            // height: '100px',
             justifyContent: 'space-between',
           }}
         >
@@ -82,11 +81,9 @@ export function Header() {
             <MenuIcon />
           </IconButton>
           <Typography
-            variant='h3'
+            variant='h4'
             component='div'
             sx={{
-              flexGrow: 1,
-              // display: 'block',
               display: { xs: 'none', sm: 'block' },
             }}
           >

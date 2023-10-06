@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import st from './cardsite.module.css';
 import Card from '@mui/material/Card';
