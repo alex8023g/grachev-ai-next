@@ -31,6 +31,12 @@ export const mySites = [
     github: 'https://github.com/alex8023g/books-search-next-rtk',
   },
   {
+    href: 'https://grachev-ai-next.vercel.app',
+    image: '/img/grachev-ai.png',
+    stack: `Nextjs 13 (App Router, Dynamic Metadata), Typescrypt, Mongo DB`,
+    github: 'https://github.com/alex8023g/grachev-ai-next',
+  },
+  {
     href: 'https://evklid-henna.vercel.app/',
     image: '/img/evklid.png',
     stack: 'HTML, CSS, Swiper.',
