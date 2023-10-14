@@ -21,20 +21,22 @@ export default function CardSite({ href, image, stack, github }: Props) {
       sx={{ height: '100%' }}
       elevation={9}
     >
-      <CardActionArea>
-        <CardMedia
-          component='img'
-          // width='100px'
-          // height='550'
-          sx={{ width: '100%' }}
-          // sx={{ maxWidth: '70vw' }}
-          image={image}
-          alt='green iguana'
-          onClick={(e) => {
-            window.open(href);
-          }}
-        />
-      </CardActionArea>
+      <a href={href}>
+        <CardActionArea>
+          <CardMedia
+            component='img'
+            // width='100px'
+            // height='550'
+            sx={{ width: '100%' }}
+            // sx={{ maxWidth: '70vw' }}
+            image={image}
+            alt='green iguana'
+            // onClick={(e) => {
+            //   window.open(href);
+            // }}
+          />
+        </CardActionArea>
+      </a>
       <CardContent
         sx={{
           backgroundColor: '#e8e7e6',
