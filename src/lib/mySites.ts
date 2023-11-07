@@ -22,7 +22,7 @@ export const mySites = [
     href: 'https://kommo-infinizai-wp-devserver.vercel.app',
     image: '/img/infinizai.png',
     stack: `React, Typescrypt, React-Router, Webpack, classnames`,
-    github: 'https://github.com/alex8023g/kommo-infinizai',
+    github: 'https://github.com/alex8023g/kommo-infinizai-wp-devserver',
   },
   {
     href: 'https://books-search-next-rtk.vercel.app',
