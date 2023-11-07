@@ -19,9 +19,9 @@ export const mySites = [
     github: 'https://github.com/alex8023g/coin-front-end',
   },
   {
-    href: 'https://kommo-infinizai.vercel.app',
+    href: 'https://kommo-infinizai-wp-devserver.vercel.app',
     image: '/img/infinizai.png',
-    stack: `React, Typescrypt, React-Router, classnames`,
+    stack: `React, Typescrypt, React-Router, Webpack, classnames`,
     github: 'https://github.com/alex8023g/kommo-infinizai',
   },
   {
