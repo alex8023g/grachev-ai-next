@@ -15,7 +15,7 @@ export async function generateMetadata() {
 export default function Portfolio() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <ul className={st.ul}>
         {mySites.map(({ image, href, stack, github }) => (
           <li key={href}>

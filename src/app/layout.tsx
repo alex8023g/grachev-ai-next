@@ -56,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className={inter.className}>
+        <Header />
         <main className={st.main}>{children}</main>
       </body>
     </html>

@@ -16,7 +16,7 @@ export async function generateMetadata() {
 export default function Certificates() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <ul className={st.ul}>
         {[reactJsImg, jsAdvImg, nodeJsImg, webLayoutImg].map((cert, i) => (
           <li key={i} className={st.li}>
