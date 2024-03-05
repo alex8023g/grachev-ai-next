@@ -4,6 +4,7 @@ import nodeJsImg from '@/img/CertSBNodeJS.png';
 import jsAdvImg from '@/img/CertSBJSAdvanced.png';
 import reactJsImg from '@/img/CertSBReactJS.png';
 import webLayoutImg from '@/img/CertSBWebLayout.png';
+import ts from '@/img/CertSBTS.png';
 import Image from 'next/image';
 import { Header } from '@/components/Header';
 import { getMetadata } from '@/lib/getMetadata';
@@ -18,7 +19,7 @@ export default function Certificates() {
     <>
       {/* <Header /> */}
       <ul className={st.ul}>
-        {[reactJsImg, jsAdvImg, nodeJsImg, webLayoutImg].map((cert, i) => (
+        {[reactJsImg, jsAdvImg, nodeJsImg, webLayoutImg, ts].map((cert, i) => (
           <li key={i} className={st.li}>
             <Image className={st.img} src={cert} alt='' />
           </li>
