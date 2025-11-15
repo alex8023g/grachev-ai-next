@@ -1,20 +1,19 @@
 import { sendFeedbackMsg } from '@/lib/sendFeedbackMsg';
 import st from './privacy.module.css';
 
-export default function ToDoooPrivacy() {
+export default function PrivacyNoDataCollectAppsPage() {
   return (
     <>
-      <h1>Privacy policy application diary</h1>
+      <h1>Privacy policy application</h1>
       <p>
-        This is the privacy policy for Diary application developed by Grachev AI. We are
+        This is the privacy policy for application developed by Grachev Aleksei. We are
         committed to protecting your privacy and ensuring the security of your personal
         information.
       </p>
       <h2>Information We Collect</h2>
       <p>
-        We do not collect any personal information from users of Diary app. All data
-        entered into the app is stored locally on your device and is not shared with any
-        third parties.
+        We do not collect any personal information from users. All data entered into the
+        app is stored locally on your device and is not shared with any third parties.
       </p>
       <h2>Data Security</h2>
       <p>
